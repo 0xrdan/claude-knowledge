@@ -1,0 +1,26 @@
+{
+  "name": "claude-knowledge",
+  "version": "0.1.0",
+  "description": "Persistent project knowledge for Claude Code - captures patterns, quirks, and decisions",
+  "author": {
+    "name": "Dan Monteiro"
+  },
+  "homepage": "https://github.com/0xrdan/claude-knowledge",
+  "repository": "https://github.com/0xrdan/claude-knowledge",
+  "license": "MIT",
+  "keywords": ["knowledge", "memory", "patterns", "learning"],
+  "commands": [
+    "./commands/learn.md",
+    "./commands/learn-on.md",
+    "./commands/learn-off.md",
+    "./commands/learn-reset.md",
+    "./commands/knowledge.md"
+  ],
+  "skills": [
+    "./skills/learn/SKILL.md",
+    "./skills/learn-on/SKILL.md",
+    "./skills/learn-off/SKILL.md",
+    "./skills/learn-reset/SKILL.md",
+    "./skills/knowledge/SKILL.md"
+  ]
+}

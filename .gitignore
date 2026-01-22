@@ -1,0 +1,17 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Node modules (if any future tooling)
+node_modules/
+
+# Local knowledge directory (for development/testing)
+# Use /knowledge/ to only match root level, not skills/knowledge/
+/knowledge/

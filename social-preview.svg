@@ -1,0 +1,93 @@
+<svg width="1280" height="640" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f0f23"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d4a574"/>
+      <stop offset="100%" style="stop-color:#c9956c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="640" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.03">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
+    </pattern>
+    <rect width="1280" height="640" fill="url(#grid)"/>
+  </g>
+
+  <!-- Decorative elements - knowledge nodes -->
+  <g opacity="0.15">
+    <circle cx="150" cy="150" r="80" fill="none" stroke="#d4a574" stroke-width="2"/>
+    <circle cx="150" cy="150" r="60" fill="none" stroke="#d4a574" stroke-width="1"/>
+    <circle cx="1130" cy="490" r="100" fill="none" stroke="#d4a574" stroke-width="2"/>
+    <circle cx="1130" cy="490" r="70" fill="none" stroke="#d4a574" stroke-width="1"/>
+  </g>
+
+  <!-- Connection lines -->
+  <g opacity="0.1" stroke="#d4a574" stroke-width="1">
+    <line x1="230" y1="150" x2="400" y2="280"/>
+    <line x1="1030" y1="490" x2="880" y2="380"/>
+    <line x1="150" y1="230" x2="200" y2="400"/>
+  </g>
+
+  <!-- Brain/Knowledge icon -->
+  <g transform="translate(540, 140)">
+    <circle cx="100" cy="80" r="70" fill="none" stroke="url(#accent)" stroke-width="3" opacity="0.8"/>
+    <path d="M70 60 Q85 40 100 60 Q115 40 130 60" fill="none" stroke="#d4a574" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M65 80 Q80 65 100 80 Q120 65 135 80" fill="none" stroke="#d4a574" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M70 100 Q85 85 100 100 Q115 85 130 100" fill="none" stroke="#d4a574" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Nodes -->
+    <circle cx="55" cy="50" r="6" fill="#d4a574"/>
+    <circle cx="145" cy="50" r="6" fill="#d4a574"/>
+    <circle cx="50" cy="90" r="6" fill="#d4a574"/>
+    <circle cx="150" cy="90" r="6" fill="#d4a574"/>
+    <circle cx="100" cy="30" r="6" fill="#d4a574"/>
+  </g>
+
+  <!-- Main title -->
+  <text x="640" y="320" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="72" font-weight="700" fill="white">
+    Claude Knowledge
+  </text>
+
+  <!-- Subtitle -->
+  <text x="640" y="385" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" fill="#a0a0a0">
+    Persistent Learning for Claude Code
+  </text>
+
+  <!-- Feature pills -->
+  <g font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18">
+    <!-- Patterns -->
+    <rect x="340" y="430" width="130" height="40" rx="20" fill="none" stroke="#d4a574" stroke-width="1.5" opacity="0.6"/>
+    <text x="405" y="456" text-anchor="middle" fill="#d4a574">Patterns</text>
+
+    <!-- Quirks -->
+    <rect x="500" y="430" width="110" height="40" rx="20" fill="none" stroke="#d4a574" stroke-width="1.5" opacity="0.6"/>
+    <text x="555" y="456" text-anchor="middle" fill="#d4a574">Quirks</text>
+
+    <!-- Decisions -->
+    <rect x="640" y="430" width="130" height="40" rx="20" fill="none" stroke="#d4a574" stroke-width="1.5" opacity="0.6"/>
+    <text x="705" y="456" text-anchor="middle" fill="#d4a574">Decisions</text>
+
+    <!-- Cross-session -->
+    <rect x="800" y="430" width="160" height="40" rx="20" fill="none" stroke="#d4a574" stroke-width="1.5" opacity="0.6"/>
+    <text x="880" y="456" text-anchor="middle" fill="#d4a574">Cross-Session</text>
+  </g>
+
+  <!-- Bottom tagline -->
+  <text x="640" y="560" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#666">
+    Knowledge that survives session boundaries
+  </text>
+
+  <!-- Claude Code badge -->
+  <g transform="translate(1080, 50)">
+    <rect x="0" y="0" width="150" height="36" rx="18" fill="#d4a574" opacity="0.15"/>
+    <text x="75" y="24" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="500" fill="#d4a574">Claude Code Plugin</text>
+  </g>
+</svg>
